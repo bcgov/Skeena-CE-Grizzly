@@ -1,0 +1,79 @@
+
+Scenario names and descriptions
+--------------------------------------------
+
+SSP1: Re-Wilding
+Also called Conserve_m0_w0_nd_ccCNRM_CM5_rcp26
+
+Climate scenarario: RCP 2.6 (specifically CNRM_CM5_rcp26)
+
+Forest management: high conservation and access controls (Conserve)
+Pipelines: current PNG
+Mining: current (m0)
+Wind farms: current (w0)
+Natural disturbance (nd; fire + MPB)
+Transmission lines: current
+Land use change: 0.5% growth/year (urban, agriculture and range)
+
+
+--------------------------------------------
+SSP2: Climate Refugees
+Also called TSR_m1_w1_nd_cc15GCM_Ensemble_rcp45
+
+Climate scenarario: RCP 4.5 (specifically 15GCM_Ensemble_rcp45)
+
+Forest management: current (TSR)
+Pipelines: current PNG + 1 new (PNG proposed)
+Mining: current + proposed (m1; 200 over 250 yrs)
+Wind farms: current + proposed (w1; 16 over first 16 yrs)
+Natural disturbance (nd; fire + MPB)
+Transmission lines: connect grid to mines and wind farms
+Land use change: 1% growth/year (urban, agriculture and range)
+
+--------------------------------------------
+
+SSP3: Dystopia
+Also called Dereg_m3_w3_nd_cc15GCM_Ensemble_rcp85
+
+Climate scenarario: RCP 8.5 (specifically 15GCM_Ensemble_rcp85)
+
+Forest management: regulation (Dereg; reduced protections and constraints)
+Pipelines: current PNG + all proposed
+Mining: current + proposed + 3x more modelled (m3; 537 over 250 years)
+Wind farms: current + proposed + many (w3; 2/year starting with proposed)
+Natural disturbance (nd; fire + MPB)
+Transmission lines: connect grid to mines and wind farms
+Land use change: 2% growth/year (urban, agriculture and range)
+
+200, 312,537
+--------------------------------------------
+
+SSP4: 1%-ers
+Also called Conserve_m2_w2_nd_cc15GCM_Ensemble_rcp45
+
+Climate scenarario: RCP 4.5 (specifically 15GCM_Ensemble_rcp45)
+
+Forest management: high conservation and access controls (Conserve)
+Pipelines: current PNG + prosed along south (PNG, Coastal Gas, PTP and Enbridge)
+Mining: current + proposed + 1x more modelled (m2; 312 over 250 years)
+Wind farms: current + proposed + some (w2; 1/year started with proposed)
+Natural disturbance (nd; fire + MPB)
+Transmission lines: connect grid to mines and wind farms
+Land use change: -1% decline/year (urban, agriculture and range)
+
+--------------------------------------------
+
+SSP5: Engineers
+Also called BioEng_m2_w3_nd_cc15GCM_Ensemble_rcp45
+
+Climate scenarario: RCP 4.5 (specifically 15GCM_Ensemble_rcp45)
+
+Forest management: inctreased growth due to genetic gain (BioEng)
+Pipelines: current PNG + 1 new (PNG proposed)
+Mining: current + proposed + 1x more modelled (m2; 312 over 250 years)
+Wind farms: current + proposed + many (w3; 2/year starting with proposed)
+Natural disturbance (nd; fire + MPB)
+Transmission lines: connect grid to mines and wind farms
+Land use change: 2% growth/year (urban, agriculture and range)
+
+--------------------------------------------
