@@ -30,6 +30,7 @@ internal.R
 
 # Data files
 /data/
+
 #Figures
 /graphics/
 *.png
