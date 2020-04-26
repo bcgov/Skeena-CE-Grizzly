@@ -29,7 +29,7 @@ internal.R
 *.DS_Store
 
 # Data files
-/data/*
+/data*/*
 
 #Figures
 /graphics/
