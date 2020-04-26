@@ -28,4 +28,15 @@ out/
 internal.R
 *.DS_Store
 
-
+# Data files
+/data/
+#Figures
+/graphics/
+*.png
+*.html
+*.pdf
+.DS_Store
+/out*/
+/tmp*/
+*qgs*
+*doc*

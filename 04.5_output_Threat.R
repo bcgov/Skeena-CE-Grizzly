@@ -28,7 +28,7 @@ GraphIndFn <- function(dfIN, Ind, yLab, GBPUnum){
 TblIndFn <- function(dfIN, Ind, GBPUnum){
   data.frame(dfIN[,(names(dfIN) %in% TblStrata)], Ind=dfIN[[Ind]]) %>% 
     spread(ScenName, Ind) %>%
-    write.table( file = paste(fileOutDir,Ind,"/GBPU_",AOI_GBPUs[GBPUnum],"_Tbl.csv",sep=""), 
+    write.table( file = paste(dataOutDir,Ind,"/GBPU_",AOI_GBPUs[GBPUnum],"_Tbl.csv",sep=""), 
                  quote = FALSE, row.names = FALSE, col.names = TRUE, sep=",")
 }
 
@@ -42,19 +42,19 @@ num_indicators<-length(IndicatorNames)-2 #removing place holders for Habitat and
 for (Indnum in 1:num_indicators) {
   yvar<-IndicatorNames[Indnum]
   yLabel<-YLabs[Indnum]
-  dir.create(file.path(paste(fileOutDir,yvar, sep='')), showWarnings = FALSE)
+  dir.create(file.path(paste(dataOutDir,yvar, sep='')), showWarnings = FALSE)
   
   for (GBnum in 1:num_GBPUs) {
     df<-subset(GB3, (GBPU %in% AOI_GBPUs[GBnum]) & (LF=='flat'))
     
     #plot of Threat
-    ggsave(filename=(paste(fileOutDir,yvar,"/GBPU_",AOI_GBPUs[GBnum],"_Graph.pdf",sep="")), 
+    ggsave(filename=(paste(dataOutDir,yvar,"/GBPU_",AOI_GBPUs[GBnum],"_Graph.pdf",sep="")), 
            plot=GraphIndFn(df,yvar,yLabel,GBnum), width=8, height=10)
     #Table of Threat by GBPU
     TblIndFn(df,yvar,GBnum)
     #Concatenate table of all GBPUs for Threat processing
     ifelse(GBnum == 1, appendcolvar<-FALSE, appendcolvar<-TRUE)
-    write.table(df, file = paste(fileOutDir,yvar,"/SkeenaGBPUs_Tbl.csv",sep=""),
+    write.table(df, file = paste(dataOutDir,yvar,"/SkeenaGBPUs_Tbl.csv",sep=""),
                 append = appendcolvar, quote = FALSE, row.names = FALSE, col.names = !appendcolvar, sep=",")
   }
 }
